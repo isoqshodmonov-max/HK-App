@@ -89,7 +89,7 @@ app.get('/', (req, res) => {
 app.post('/submit', (req, res) => {
   const { inputText } = req.body; // HTML formasi orqali kiritilgan matn
   if (inputText === 'HK001' || inputText === 'HK002' || inputText === 'HK003' || inputText === 'HK004' || inputText === 'HK005' || inputText === 'HK006' || inputText === 'HK007' || inputText === 'HK008' || inputText === 'HK009' || inputText === 'HK010' || inputText === 'HK011' || inputText === 'HK012' || inputText === 'HK013' || inputText === 'HK014' || inputText === 'HK015' ) {
-    accessSpreadsheet(inputText); // Ma'lumotlarni Google Sheets ga yozish funktsiyasiga uzatish
+    accessSpreadsheet(); // Ma'lumotlarni Google Sheets ga yozish funktsiyasiga uzatish
     res.send('Ma\'lumotlar yozildi!');
   } else {
     res.send('Matn yozilmadi, chunki matn HK001, HK002 yoki HK003 emas');
