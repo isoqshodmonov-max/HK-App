@@ -27,7 +27,10 @@ async function accessSpreadsheet(values) {
 
   // Vaqt olish
   const now = new Date();
-  const time = `${now.getHours()+5}:${now.getMinutes()}`;
+  now.setHours(now.getHours() + 5);
+  const time = `${now.getHours()}:${now.getMinutes()}`;
+  console.log(time);
+  
 
   // Hafta kuniga qarab jadvallar cellarini aniqlash
   switch (now.getDay()) {
