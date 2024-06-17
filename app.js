@@ -95,7 +95,3 @@ app.post('/submit', (req, res) => {
     res.send('Matn yozilmadi, chunki matn HK001, HK002 yoki HK003 emas');
   }
 });
-
-// Serverni ishga tushirish
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server ishga tushirildi: http://localhost:${PORT}`));
