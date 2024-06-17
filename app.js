@@ -97,5 +97,5 @@ app.post('/submit', (req, res) => {
 });
 
 // Serverni ishga tushirish
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => console.log(`Server ishga tushirildi: http://localhost:${PORT}`));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server ishga tushirildi: http://localhost:${PORT}`));
