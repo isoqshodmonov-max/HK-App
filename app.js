@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const { google } = require('googleapis');
-const keys = require('app.json'); // Google API avtorizatsiya kaliti (OAuth 2.0 Klient ID va Secret key)
+const keys = require('/app.json'); // Google API avtorizatsiya kaliti (OAuth 2.0 Klient ID va Secret key)
 
 const app = express();
 
